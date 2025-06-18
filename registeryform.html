@@ -4,9 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registration</title>
+  <style>
+    body{
+      background-image:url(style/image/image3.jpg);
+    }
+    .registry-form{
+      margin: 250px 500px 150px 500px;
+      border: 2px solid lightskyblue;
+      border-radius: 10px;
+      padding: 50px 50px 50px 50px;
+    }
+    
+  </style>
 </head>
 <body>
-  <form>
+  <form class="registry-form" action="" method="">
     <label for="name">Name:</label>
     <input type="text" id="name" placeholder="Your name" required><br>
     <label for="email">Email:</label>
@@ -17,6 +29,7 @@
     <input type="text" id="password" placeholder="Enter your password:" required><br>
     <label for="Password2">Password2</label>
     <input type="text" id="Password2" placeholder="Confirm your password:" required><br>
+    <button><a href="home.html">Submit</a></button>
   </form>
 </body>
 </html>

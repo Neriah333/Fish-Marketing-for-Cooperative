@@ -4,44 +4,78 @@ body.login {
 }
 .loginpage {
   margin: 250px 500px 150px 500px;
-  border: 2px solid lightskyblue;
-  border-radius: 10px;
-  padding: 50px 50px 50px 50px;
+  border: 2px solid powderblue;
+  border-radius: 30px;
+  padding: 50px;
 }
+
 body.home {
-  background-image: url(image/image2.jpg);
+  /* background-image: url(image/image2.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  background-color: powderblue;
 }
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh; /* full viewport height */
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #333;
-
+  width: 200px;
 }
 
 li {
-  float: left;
+  margin-bottom: 15px;
 }
 
 li a {
   display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+  color: #000;
+  padding: 20px 15px;
   text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-/* Change the link color to #111 (black) on hover */
+/* Change the link color on hover */
 li a:hover {
-  background-color: #111;
+  background-color: #3e5ba1;
+  color: white;
 }
+.image-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;         /* Reduce width */
+  margin: 0 auto;
+  gap: 20px; /* space between images */
+  justify-content: center;
+}
+
+.image-section img {
+  width: calc(50% - 20px); /* 2 per row with gap considered */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
 
 footer {
   margin-top: 30%;
   text-align: center;
+}
+.form {
+  
 }
 .hero {
   
